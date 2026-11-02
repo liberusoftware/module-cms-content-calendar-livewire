@@ -12,7 +12,6 @@ final class ContentCalendarLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-cms-content-calendar');
         Livewire::component('module-cms-content-calendar::calendar-board', CalendarBoard::class);
     }
 }
